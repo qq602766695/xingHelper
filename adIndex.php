@@ -5,6 +5,8 @@ if(!$isLink){
 	exit("数据库转接失败！");
 }
 $adminId = $_REQUEST['adminId'];//接收管理员用户ID
+echo $adminId;
+
 $sql = "select * from booklistname where admincode={$adminId}";
 $totalRow =@ getResultRow($sql);
 if($totalRow){

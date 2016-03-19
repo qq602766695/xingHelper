@@ -19,8 +19,13 @@ function saveBookList($arr,$adminId){
 	$bookSumNum = $arr['bookSumNum'];
 	$bookListName = $arr['bookListName'];
 	$sql = "insert booklistname (booklistname,admincode) values ('{$bookListName}','{$adminId}')";
+	echo $sql;
 	mysql_query($sql);
+
 	$bookListId = mysql_insert_id();
+
+	echo $bookListId;
+
 	if(!$bookListId)	alertMes("插入书名出错！","adIndex.php");
 
 	/*$sql = "insert booklist (listcode) values ('{$bookListId}')";

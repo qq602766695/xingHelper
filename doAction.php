@@ -120,6 +120,8 @@ if($act == 'publish'){
 	$sql = "select password,id from administrator where username='{$username}'";
 	echo $sql;
 	$result = fetchOne($sql);
+	echo $result['id'];
+	
 	if($result['password'] == $password){
 		alertMes("登录成功！！！","adIndex.php?adminId={$result['id']}");
 	}else{

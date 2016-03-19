@@ -1,7 +1,7 @@
 <?php
 define("DB_HOST", "localhost");
 define("DB_USER", "root");
-define("DB_PWD", "root");
+define("DB_PWD", "336258");
 define("DB_CHARSET", "gbk");
 define("DB_DBNAME", "xingHelper");
 
